@@ -28,9 +28,11 @@ h3 {
 
 h1 {
 	font-size: 2.666em;
+	margin: 1.2em auto .7em;
 }
 h2 {
 	font-size: 2em;
+	margin: 1em auto .5em;
 }
 h3 {
 	font-size: 1.555em;
@@ -52,13 +54,13 @@ span {
 header {
 	background: url('../img/full-background.png');
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 	text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding-bottom: 400px;
+    padding-bottom: 500px;
 }
 
 .content-wrapper {
@@ -100,7 +102,7 @@ header nav ul li a{
 
 #about {
 	background: #ebebeb;
-	padding: 0 50px 50px;
+	padding: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -133,7 +135,7 @@ header nav ul li a{
 /* ----- CLASSES ----- */
 
 #classes {
-	padding: 0 50px 50px;
+	padding: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -146,7 +148,7 @@ header nav ul li a{
 	font-size: 1.222em;
 	background-size: 100%;
     box-sizing: border-box;
-    margin: 25px auto 0;
+    margin: 25px auto;
     text-align: center;
     width: auto;
     cursor: pointer;
@@ -160,7 +162,7 @@ header nav ul li a{
 
 #contact {
 	background: #ebebeb;
-	padding: 0 50px 50px;
+	padding: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -170,6 +172,14 @@ header nav ul li a{
 #contact img#contact-img {
 	margin: 35px;
 	border: 12px solid #fff;
+}
+
+#contact .contact-image {
+	order: 2
+}
+
+#contact .contact-details {
+	order: 1
 }
 
 #contact h2 { 
