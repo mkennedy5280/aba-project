@@ -85,7 +85,6 @@ header nav ul {
 }
 header nav ul li {
 	text-transform: none;
-	font-weight: 700;
 	font-size: 1em;
 	padding: 10px 10px;
 	list-style: none;
@@ -203,31 +202,12 @@ header nav ul li a{
 /* ----- RESPONSIVE ----- */
 
 
-/* Desktop stysle here *
+/* Desktop stysle here */
 @media only screen and (min-width: 1200px) {
 
-header nav {
-	width: 30%;
-	background: none;
-}
-
-/*
-header nav ul {
-	display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 720px;
-}
-
-
 .container{
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: auto;
-    width: 1200px;
-    overflow: auto;
+	max-width: none;
+	display: block;
 }
 
 .content-wrapper {
@@ -243,9 +223,42 @@ header h1 {
 	font-size: 1.666em;
 }
 
+header nav {
+	width: 30%;
+	background: none;
+}
+
+header nav ul {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 720px;
+}
+
+header nav ul li {
+	text-transform: none;
+	font-size: 1em;
+	padding: 10px 10px;
+	list-style: none;
+	border-top: none;
+}
+
 header h2 {
 	margin: 30px 60px;
 }
+/*
+
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+
+
 
 
 
