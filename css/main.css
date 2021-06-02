@@ -22,7 +22,7 @@ body {
 h1,
 h2,
 h3 {
-	color: #333e48;
+	color: #5f6151;
 	font-weight: 700;
 }
 
@@ -43,10 +43,14 @@ p {
     padding: 0 50px;
 }
 
+span {
+	font-family: 'Dancing Script', cursive;
+}
+
 /* ----- HEADER ----- */
 
 header {
-	background: url('../img/full-background-mobile-851.png');
+	background: url('../img/full-background.png');
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -78,7 +82,7 @@ header nav ul {
 	padding: 0;
 }
 header nav ul li {
-	text-transform: uppercase;
+	text-transform: none;
 	font-weight: 700;
 	font-size: 1em;
 	padding: 10px 10px;
@@ -88,7 +92,7 @@ header nav ul li {
 
 header nav ul li a{
 	text-decoration: none;
-	color:#333e48;
+	color:#5f6151;
 	font-size: 1.222em;
 }
 
@@ -138,7 +142,7 @@ header nav ul li a{
 
 .primary-button {
 	text-decoration: none;
-	color:#333e48;
+	color:#5f6151;
 	font-size: 1.222em;
 	background-size: 100%;
     box-sizing: border-box;
@@ -189,8 +193,22 @@ header nav ul li a{
 /* ----- RESPONSIVE ----- */
 
 
-/* Desktop stysle here */
+/* Desktop stysle here *
 @media only screen and (min-width: 1200px) {
+
+header nav {
+	width: 30%;
+	background: none;
+}
+
+/*
+header nav ul {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 720px;
+}
+
 
 .container{
 	display: flex;
@@ -211,15 +229,18 @@ header nav ul li a{
 
 header h1 {
 	width: 50%;
+	text-align: left;
+	font-size: 1.666em;
 }
 
-header nav {
-	width: 30%;
-	background: none;
+header h2 {
+	margin: 30px 60px;
 }
+
+
 
 header nav ul li {
-	text-transform: uppercase;
+	text-transform: none;
 	font-weight: 700;
 	font-size: 1em;
 	padding: 10px 10px;
