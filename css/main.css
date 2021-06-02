@@ -1,0 +1,378 @@
+/* ----- BASE STYLES ----- */
+
+html { 
+	font-size: 18px;
+}
+
+body {
+	color: #333e48;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: #333e48;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 2.666em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.555em;
+}
+
+p {
+	color: #7f7f7f;
+    font-size: 21px;
+    line-height: 40px;
+    padding: 0 50px;
+}
+
+/* ----- HEADER ----- */
+
+header {
+	background: url('../img/full-background-mobile-851.png');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 400px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header h1 {
+	width: 100%;
+}
+
+header nav {
+	width: 100%;
+	background: #e2e5cb;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 10px 10px;
+	list-style: none;
+	border-top: 3px solid white;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#333e48;
+	font-size: 1.222em;
+}
+
+/* ----- ABOUT ----- */
+
+#about {
+	background: #ebebeb;
+	padding: 0 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.about-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#about img#about-img {
+	margin: 35px;
+	border: 12px solid #fff;
+}
+
+#about h2 {
+	padding: 0 50px;
+}
+
+#about p {
+	color: #7f7f7f;
+	font-size: 21px;
+	line-height: 40px;
+	padding: 0 50px;
+}
+
+/* ----- CLASSES ----- */
+
+#classes {
+	padding: 0 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.primary-button {
+	text-decoration: none;
+	color:#333e48;
+	font-size: 1.222em;
+	background-size: 100%;
+    box-sizing: border-box;
+    margin: 25px auto 0;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    background: linear-gradient(to bottom,#e2e5cb 4%,#bcc388 96%);
+    border-radius: 3px;
+    padding: .8em 1.5em;
+    border-radius: 3px;
+}
+
+/* ----- CONTACT ----- */
+
+#contact {
+	background: #ebebeb;
+	padding: 0 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#contact img#contact-img {
+	margin: 35px;
+	border: 12px solid #fff;
+}
+
+#contact h2 { 
+   text-align: center;
+}
+
+#contact a {
+	color: #5f6151;
+	font-size: 1.555em;
+	text-decoration: none;
+	text-align: center;
+}
+
+#contact p {
+	color: #5f6151;
+	font-size: 1.555em;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* ----- RESPONSIVE ----- */
+
+
+/* Desktop stysle here */
+@media only screen and (min-width: 1200px) {
+
+.container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 1200px;
+    overflow: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+header h1 {
+	width: 50%;
+}
+
+header nav {
+	width: 30%;
+	background: none;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 10px 10px;
+	list-style: none;
+	border-top: none;
+}
+
+header nav ul {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 720px;
+}
+
+
+
+/***** HEADER ****
+
+header {
+	height: 800px;
+	background: url('../img/full-background.png');
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+/***** ABOUT *****
+
+#about .full-width {
+	padding: 80px 0;
+}
+
+#about h2 {
+	font-family: 'Lora', serif;
+	font-size: 36px;
+	padding-left: 50px;
+}
+
+#about p {
+	color: #7f7f7f;
+	font-size: 21px;
+	line-height: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/***** CLASSES ****
+
+#classes {
+	background: #cdd0e5;
+}
+
+#classes .full-width {
+	padding: 115px 0;
+	text-align: center;
+}
+
+#classes img {
+	padding-bottom: 30px;
+}
+
+#classes h3 {
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0 auto;
+	width: 200px;
+}
+
+#classes p {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+/***** CONTACT *****
+
+#contact {
+	background: #ebebeb;
+}
+
+#contact .full-width {
+	padding: 110px 0;
+
+}
+
+#contact img#contact-img {
+	margin-left: 25px;
+	border: 12px solid #ffffff;
+}
+
+#contact h2 {
+    padding-left: 115px;
+}
+
+#contact #envelope {
+	padding: 0 10px 0 115px;
+}
+
+#contact h2 {
+	font-family: 'Lora', serif;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+#contact #email-header {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 44px;
+	margin: -30px 0 5px 0;
+}
+
+#contact #socialmedia-header {
+	font-weight: 700;
+	font-size: 29px;
+	line-height: 44px;
+	margin: 50px 0 26px 0;
+}
+
+#contact a {
+	color: #c49075;
+	font-size: 29px;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0 10px 0 115px;
+}
+
+#contact p {
+	color: #c49075;
+	font-size: 29px;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0 10px 0 115px;
+}
+
+#contact ul {
+	list-style: none;
+}
+
+#contact ul li {
+	display: inline-block;
+}
+
+#contact ul img {
+	padding-right: 48px;
+}
+
+
+}
+
+
+
+
+
+
