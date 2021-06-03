@@ -169,20 +169,22 @@ header nav ul li a{
 }
 
 #contact img#contact-img {
-	margin: 35px;
 	border: 12px solid #fff;
+	margin: 35px;
 }
 
 #contact .contact-image {
-	order: 2
+	order: 2;
 }
 
 #contact .contact-details {
-	order: 1
+	order: 1;
+	margin: 35px;
 }
 
 #contact h2 { 
    text-align: center;
+   margin: 0px;
 }
 
 #contact a {
@@ -197,6 +199,7 @@ header nav ul li a{
 	font-size: 1.555em;
 	text-decoration: none;
 	text-align: center;
+	margin: 10px auto;
 }
 
 /* ----- RESPONSIVE ----- */
@@ -217,15 +220,27 @@ header nav ul li a{
     flex-basis: 100%;
 }
 
+header {
+    padding-bottom: 400px;
+    justify-content: flex-start;
+}
+
+header h2 {
+    margin: 50px 168px;
+    font-size: 2.777em;
+}
+
 header h1 {
-	width: 50%;
+	width: 30%;
 	text-align: left;
 	font-size: 1.666em;
+	margin: 25px auto;
 }
 
 header nav {
 	width: 30%;
 	background: none;
+	margin: 25px auto;
 }
 
 header nav ul {
@@ -243,19 +258,21 @@ header nav ul li {
 	border-top: none;
 }
 
-header h2 {
-	margin: 30px 60px;
+#contact {
+	justify-content: space-evenly;
+}
+
+#contact a {
+	font-size: 1.111em;
+	text-align: center;
+}
+
+#contact p {
+	font-size: 1.111em;
 }
 /*
 
 
-
-.content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 100%;
-}
 
 
 
