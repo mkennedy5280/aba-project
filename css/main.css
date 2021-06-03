@@ -204,236 +204,77 @@ header nav ul li a{
 
 /* ----- RESPONSIVE ----- */
 
+/* Tablet stysle here */
+@media only screen and (min-width: 768px) {
+
+	.container{
+		max-width: none;
+		display: block;
+	}
+
+	.content-wrapper {
+	    display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+	    flex-basis: 100%;
+	}
+
+	header {
+	    padding-bottom: 400px;
+	    justify-content: flex-start;
+	}
+
+	header h2 {
+	    margin: 50px 168px;
+	    font-size: 2.4em;
+	}
+
+	header h1 {
+		width: 30%;
+		text-align: left;
+		font-size: 1.666em;
+		margin: 25px auto;
+	}
+
+	header nav {
+		width: 30%;
+		background: none;
+		margin: 25px auto;
+	}
+
+	header nav ul {
+		display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	    max-width: 720px;
+	}
+
+	header nav ul li {
+		text-transform: none;
+		font-size: 1em;
+		padding: 10px 10px;
+		list-style: none;
+		border-top: none;
+	}
+
+	#contact {
+		justify-content: space-evenly;
+	}
+
+	#contact a {
+		font-size: 1.111em;
+		text-align: center;
+	}
+
+	#contact p {
+		font-size: 1.111em;
+	}
+}
 
 /* Desktop stysle here */
 @media only screen and (min-width: 1200px) {
 
-.container{
-	max-width: none;
-	display: block;
+	header h2 {
+	    font-size: 2.777em;
+	}
 }
-
-.content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 100%;
-}
-
-header {
-    padding-bottom: 400px;
-    justify-content: flex-start;
-}
-
-header h2 {
-    margin: 50px 168px;
-    font-size: 2.777em;
-}
-
-header h1 {
-	width: 30%;
-	text-align: left;
-	font-size: 1.666em;
-	margin: 25px auto;
-}
-
-header nav {
-	width: 30%;
-	background: none;
-	margin: 25px auto;
-}
-
-header nav ul {
-	display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 720px;
-}
-
-header nav ul li {
-	text-transform: none;
-	font-size: 1em;
-	padding: 10px 10px;
-	list-style: none;
-	border-top: none;
-}
-
-#contact {
-	justify-content: space-evenly;
-}
-
-#contact a {
-	font-size: 1.111em;
-	text-align: center;
-}
-
-#contact p {
-	font-size: 1.111em;
-}
-/*
-
-
-
-
-
-
-
-
-header nav ul li {
-	text-transform: none;
-	font-weight: 700;
-	font-size: 1em;
-	padding: 10px 10px;
-	list-style: none;
-	border-top: none;
-}
-
-header nav ul {
-	display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 720px;
-}
-
-
-
-/***** HEADER ****
-
-header {
-	height: 800px;
-	background: url('../img/full-background.png');
-	background-size: cover;
-	background-position: center;
-}
-
-
-
-/***** ABOUT *****
-
-#about .full-width {
-	padding: 80px 0;
-}
-
-#about h2 {
-	font-family: 'Lora', serif;
-	font-size: 36px;
-	padding-left: 50px;
-}
-
-#about p {
-	color: #7f7f7f;
-	font-size: 21px;
-	line-height: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-/***** CLASSES ****
-
-#classes {
-	background: #cdd0e5;
-}
-
-#classes .full-width {
-	padding: 115px 0;
-	text-align: center;
-}
-
-#classes img {
-	padding-bottom: 30px;
-}
-
-#classes h3 {
-	font-size: 24px;
-	line-height: 32px;
-	margin: 0 auto;
-	width: 200px;
-}
-
-#classes p {
-	font-family: 'Lora', serif;
-	font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
-}
-
-/***** CONTACT *****
-
-#contact {
-	background: #ebebeb;
-}
-
-#contact .full-width {
-	padding: 110px 0;
-
-}
-
-#contact img#contact-img {
-	margin-left: 25px;
-	border: 12px solid #ffffff;
-}
-
-#contact h2 {
-    padding-left: 115px;
-}
-
-#contact #envelope {
-	padding: 0 10px 0 115px;
-}
-
-#contact h2 {
-	font-family: 'Lora', serif;
-	font-size: 36px;
-	line-height: 44px;
-}
-
-#contact #email-header {
-	font-size: 32px;
-	font-weight: 400;
-	line-height: 44px;
-	margin: -30px 0 5px 0;
-}
-
-#contact #socialmedia-header {
-	font-weight: 700;
-	font-size: 29px;
-	line-height: 44px;
-	margin: 50px 0 26px 0;
-}
-
-#contact a {
-	color: #c49075;
-	font-size: 29px;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0 10px 0 115px;
-}
-
-#contact p {
-	color: #c49075;
-	font-size: 29px;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0 10px 0 115px;
-}
-
-#contact ul {
-	list-style: none;
-}
-
-#contact ul li {
-	display: inline-block;
-}
-
-#contact ul img {
-	padding-right: 48px;
-}
-
-
-}
-
-
-
-
-
-
