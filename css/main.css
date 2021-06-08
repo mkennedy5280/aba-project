@@ -122,7 +122,8 @@ header nav ul li a{
 }
 
 #about h2 {
-	padding: 0 50px;
+    padding: 0 25px;
+    text-align: center;
 }
 
 #about p {
@@ -204,10 +205,11 @@ header nav ul li a{
 
 /* ----- RESPONSIVE ----- */
 
-/* Tablet stysle here */
-@media only screen and (min-width: 768px) {
 
-	.container{
+/* Desktop stysle here */
+@media only screen and (min-width: 1200px) {
+
+	.container {
 		max-width: none;
 		display: block;
 	}
@@ -224,13 +226,8 @@ header nav ul li a{
 	    justify-content: flex-start;
 	}
 
-	header h2 {
-	    margin: 50px 168px;
-	    font-size: 2.4em;
-	}
-
 	header h1 {
-		width: 30%;
+		width: 40%;
 		text-align: left;
 		font-size: 1.666em;
 		margin: 25px auto;
@@ -257,15 +254,12 @@ header nav ul li a{
 		border-top: none;
 	}
 
-	#contact {
-		justify-content: space-evenly;
-	}
-}
-
-/* Desktop stysle here */
-@media only screen and (min-width: 1200px) {
-
 	header h2 {
 	    font-size: 2.777em;
+	    margin: 50px 105px;
+	}
+
+	#contact {
+		justify-content: space-evenly;
 	}
 }
