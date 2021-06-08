@@ -111,13 +111,14 @@ header nav ul li a{
 .about-section {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+	align-items: flex-start;
+	flex-flow: column wrap;
 }
 
 #about img#about-img {
 	margin: 35px;
 	border: 12px solid #fff;
+	align-self: center;
 }
 
 #about h2 {
