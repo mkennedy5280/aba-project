@@ -31,7 +31,8 @@ h1 {
 	margin: 1.2em auto .7em;
 }
 h2 {
-	font-size: 2em;
+	font-size: 1.611em;
+	line-height: 1.655em;
 	margin: 1em auto .5em;
 }
 h3 {
@@ -40,9 +41,10 @@ h3 {
 
 p {
 	color: #7f7f7f;
-    font-size: 21px;
-    line-height: 40px;
+    font-size: 1em;
+    line-height: 31px;
     padding: 0 50px;
+    margin: 18px 50px 0px 50px;
 }
 
 span {
@@ -107,7 +109,7 @@ header nav ul li {
 header nav ul li a{
 	text-decoration: none;
 	color:#5f6151;
-	font-size: 1.222em;
+	font-size: 1em;
 }
 
 /* ----- ABOUT ----- */
@@ -141,9 +143,10 @@ header nav ul li a{
 
 #about p {
 	color: #7f7f7f;
-	font-size: 21px;
-	line-height: 40px;
-	padding: 0 50px;
+    font-size: 1em;
+    line-height: 31px;
+    padding: 0 50px;
+    margin: 18px 50px 0px 50px;
 }
 
 /* ----- CLASSES ----- */
@@ -238,12 +241,14 @@ header nav ul li a{
 	header {
 	    padding-bottom: 400px;
 	    justify-content: flex-start;
+	    height: 100px;
 	}
 
+
 	header h1 {
-		width: 40%;
+		width: 35%;
 		text-align: left;
-		font-size: 1.666em;
+		font-size: 1.2em;
 		margin: 25px auto;
 	}
 
@@ -257,7 +262,7 @@ header nav ul li a{
 		display: flex;
 	    align-items: center;
 	    justify-content: space-around;
-	    max-width: 720px;
+	    width: 575px;
 	}
 
 	header nav ul li {
@@ -269,8 +274,12 @@ header nav ul li a{
 	}
 
 	header h2 {
-	    font-size: 2.777em;
+	    font-size: 2em;
 	    margin: 50px 105px;
+	}
+
+	span {
+		margin-left: 47px;
 	}
 
 	#contact {
